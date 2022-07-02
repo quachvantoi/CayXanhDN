@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" />
+    <title>Đăng nhập</title>
+    <link rel="icon" href="https://png.pngtree.com/png-clipart/20190610/original/pngtree-green-design-icon-vector-material-png-image_1931207.jpg">
+    <link href="css/style.css" rel="stylesheet" />
+    <style type="text/css">
+        .fix-pos{
+    position: absolute;
+    top: 5%;
+    left: 30px;
+}
+.ghichu{
+    width: 100px;
+    background: white;
+    overflow: auto;
+    border-radius: 8px;
+    padding: 10px;
+    opacity: 0.5;
+    display: inline-block;
+}
+    </style>
+</head>
+<body>
+    <div class="fixed-top fix-pos">
+        <div class="ghichu">
+            <table>
+                <tr>
+                    <th colspan="2">Khách Hàng</th>
+                </tr>
+                <tr>
+                    <th>TK:</th>
+                    <th>KH01</th>
+                </tr>
+                <tr>
+                    <th>MK:</th>
+                    <th>vantoi</th>
+                </tr>
+            </table>
+        </div>
+        <div class="ghichu">
+            <table>
+                <tr>
+                    <th colspan="2">Nhân Viên</th>
+                </tr>
+                <tr>
+                    <th>TK:</th>
+                    <th>NV01</th>
+                </tr>
+                <tr>
+                    <th>MK:</th>
+                    <th>abc</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+        <!--start-login-form-->
+        <div class="login-form">
+            <h1>Đăng nhập</h1>
+            <form action="KiemtraDangNhap.php" method="post">
+                <span>
+                    <input type="text" name="Taikhoan" class="user" placeholder="Username" onfocus="" onblur="">
+                </span>
+                <span>
+                    <input type="password" name="Matkhau" class="lock" placeholder="Password" onfocus="" onblur="">
+                </span>
+                <div class="submit">
+                    <input type="submit" name="form_click" value="Đăng nhập" />
+                </div>
+            </form>
+        </div>
+        <!--//End-login-form-->
+</body>
+</html>
